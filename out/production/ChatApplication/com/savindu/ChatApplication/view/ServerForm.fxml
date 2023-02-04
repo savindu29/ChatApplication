@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="646.0" prefWidth="495.0" stylesheets="@assets/css/styles.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.savindu.ChatApplication.controller.ServerFormController">
+    <children>
+        <ImageView fitHeight="646.0" fitWidth="539.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@assets/bgimg.jpg" />
+            </image>
+        </ImageView>
+        <ScrollPane layoutX="6.0" layoutY="71.0" prefHeight="514.0" prefWidth="510.0" />
+        <AnchorPane layoutX="10.0" layoutY="12.0" minHeight="0.0" minWidth="0.0" prefHeight="50.0" prefWidth="501.0" style="-fx-background-color: #ffffff; -fx-background-radius: 30px;">
+            <children>
+                <Label layoutX="204.0" layoutY="2.0" text="Server">
+                    <font>
+                        <Font name="System Bold" size="31.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="459.0" layoutY="15.0" onMouseClicked="#shutdownServerOnClick" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@assets/power.png" />
+                    </image>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </ImageView>
+            </children></AnchorPane>
+        <TextField fx:id="txtMsgBox" layoutX="14.0" layoutY="600.0" prefHeight="32.0" prefWidth="442.0" style="-fx-border-color: white; -fx-border-radius: 30; -fx-background-radius: 30;" stylesheets="@assets/css/styles.css" />
+        <ImageView fitHeight="39.0" fitWidth="32.0" layoutX="469.0" layoutY="600.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@assets/send.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>
