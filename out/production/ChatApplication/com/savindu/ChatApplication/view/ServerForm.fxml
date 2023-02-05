@@ -33,7 +33,7 @@
                     </cursor>
                 </ImageView>
             </children></AnchorPane>
-        <TextField fx:id="txtMsgBox" layoutX="14.0" layoutY="600.0" prefHeight="32.0" prefWidth="442.0" style="-fx-border-color: white; -fx-border-radius: 30; -fx-background-radius: 30;" stylesheets="@assets/css/styles.css" />
+        <TextField fx:id="txtMsgBox" layoutX="46.0" layoutY="600.0" prefHeight="34.0" prefWidth="410.0" style="-fx-border-color: white; -fx-border-radius: 30; -fx-background-radius: 30;" stylesheets="@assets/css/styles.css" />
         <ImageView fitHeight="39.0" fitWidth="32.0" layoutX="469.0" layoutY="600.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@assets/send.png" />
