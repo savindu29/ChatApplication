@@ -1,14 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.savindu.ChatApplication.controller.ClientFormController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="646.0" prefWidth="519.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.savindu.ChatApplication.controller.ClientFormController">
+    <children>
+        <ImageView fitHeight="646.0" fitWidth="539.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@assets/bgimg.jpg" />
+            </image>
+        </ImageView>
+        <ScrollPane layoutX="6.0" layoutY="71.0" prefHeight="514.0" prefWidth="510.0" />
+        <AnchorPane layoutX="10.0" layoutY="12.0" minHeight="0.0" minWidth="0.0" prefHeight="50.0" prefWidth="501.0" style="-fx-background-color: #ffffff; -fx-background-radius: 30px;">
+            <children>
+                <Label layoutX="204.0" layoutY="2.0" text="Client">
+                    <font>
+                        <Font name="System Bold" size="31.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="459.0" layoutY="15.0" onMouseClicked="#exitClientOnAction" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@assets/power.png" />
+                    </image>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </ImageView>
+            </children></AnchorPane>
+        <TextField fx:id="txtMsgBox" layoutX="43.0" layoutY="600.0" prefHeight="34.0" prefWidth="413.0" style="-fx-border-color: white; -fx-border-radius: 0 30 30 0; -fx-background-radius: 0 30 30 0; -fx-border-width: 2 2 2 0;" stylesheets="@assets/css/styles.css" />
+        <ImageView fitHeight="39.0" fitWidth="32.0" layoutX="469.0" layoutY="600.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@assets/send.png" />
+            </image>
+        </ImageView>
+      <ImageView fitHeight="20.0" fitWidth="32.0" layoutX="426.0" layoutY="607.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/camera.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="20.0" fitWidth="32.0" layoutX="394.0" layoutY="607.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/attachment.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="5.0" layoutY="600.0" prefHeight="36.0" prefWidth="38.0" style="-fx-background-color: rgba(255, 255, 255, 0.63); -fx-border-radius: 30 0 0 30; -fx-border-width: 2 0 2 2; -fx-border-color: white; -fx-background-radius: 30 0 0 30;" />
+      <ImageView fitHeight="20.0" fitWidth="32.0" layoutX="14.0" layoutY="608.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/emoji.png" />
+         </image>
+      </ImageView>
+    </children>
 </AnchorPane>
