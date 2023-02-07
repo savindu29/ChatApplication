@@ -16,25 +16,18 @@ public class LoginFormController {
     public AnchorPane loginFormContext;
 
     public void startChatOnAction(ActionEvent actionEvent) throws IOException {
-        if(!txtUserName.getText().trim().isEmpty()){
+        if (!txtUserName.getText().trim().isEmpty()){
 
-//            Stage stage = new Stage();
-//            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("../view/ClientForm.fxml"))));
-//            stage.setTitle(txtUserName.getText());
-//            Stage st  = (Stage) loginFormContext.getScene().getWindow();
-//            st.close();
-//            stage.show();
             Stage st = (Stage) loginFormContext.getScene().getWindow();
             st.setTitle(txtUserName.getText());
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../view/ClientForm.fxml"));
             Parent parent = fxmlLoader.load();
-
-            ClientFormController controller = fxmlLoader.getController();
+            ClientFormController controller= fxmlLoader.getController();
             controller.setClientName(txtUserName.getText());
             st.setScene(new Scene(parent));
-
         }else{
-            new Alert(Alert.AlertType.WARNING,"User Name is Required!").show();
+            new Alert(Alert.AlertType.WARNING, "User name is required!")
+                    .show();
         }
     }
 }
